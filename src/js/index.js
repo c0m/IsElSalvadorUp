@@ -5,7 +5,7 @@ const goodMessage = `<div class=\"good-evaluation\"><h1>Yes</h1><br><p>They're u
 const neutralMessage = `<div><h1>:|</h1><br><p>They're neither up nor down, but watch this percentage and maybe it'll change: `;
 const badMessage = `<div class=\"bad-evaluation\"><h1>No</h1><br><p>They're down by a modest `;
 const veryBadMessage = `<div class=\"bad-evaluation\"><h1>NO!</h1><br><p>Oopsie woopsie! They're very down! How much? `;
-const shillMessage = `<br><div class=\"shill-message\"><i>Would you also like to irresponsibly gamble away your country's finances? Consider signing up for an account on <a href="https://ftx.com/profile#a=iselsalvadorup">FTX</a> or <a href="https://accounts.binance.com/en/register?ref=DVISPZG8">Binance</a>.</i></div>`;
+const shillMessage = `<br><div class=\"tiny-message\"><i>Would you also like to irresponsibly gamble away your country's finances? Consider signing up for an account on <a href="https://ftx.com/profile#a=iselsalvadorup">FTX</a> or <a href="https://accounts.binance.com/en/register?ref=DVISPZG8">Binance</a>.</i></div><br>`;
 
 
 const getLocalData = async () => {
@@ -15,22 +15,84 @@ const getLocalData = async () => {
         "date": "2021-12-04",
         "ticker": "BTC",
         "direction": "Buy",
-        "amount": 50,
-        "price_in_usd": 100000,
-        "high_price_confidence": false,
+        "amount": 150,
+        "price_in_usd": 48670,
+        "high_price_confidence": true,
         "sources": ["https://twitter.com/nayibbukele/status/1467000621354135555",
                     "https://web.archive.org/web/20211204051954/https://twitter.com/nayibbukele/status/1467000621354135555"]
       },
 
       {
-        "date": "2021-12-05",
+        "date": "2021-11-26",
         "ticker": "BTC",
         "direction": "Buy",
-        "amount": 50,
-        "price_in_usd": 100000,
-        "high_price_confidence": true,
-        "sources": ["https://twitter.com/nayibbukele/status/1467000621354135555",
-                    "https://web.archive.org/web/20211204051954/https://twitter.com/nayibbukele/status/1467000621354135555"]
+        "amount": 100,
+        "price_in_usd": 54000,
+        "high_price_confidence": false,
+        "sources": ["https://twitter.com/nayibbukele/status/1464307422793715716",
+                    "https://web.archive.org/web/20211202044502/https://twitter.com/nayibbukele/status/1464307422793715716",
+                    "https://ftx.com/api/markets/BTC/USD/candles?resolution=300&start_time=1637951400&end_time=1637951401"]
+      },
+
+      {
+        "date": "2021-10-27",
+        "ticker": "BTC",
+        "direction": "Buy",
+        "amount": 420,
+        "price_in_usd": 58700,
+        "high_price_confidence": false,
+        "sources": ["https://twitter.com/nayibbukele/status/1453461587948445697",
+                    "https://web.archive.org/web/20211202044502/https://twitter.com/nayibbukele/status/1453461587948445697",
+                    "https://ftx.com/api/markets/BTC/USD/candles?resolution=300&start_time=1635366600&end_time=1635366601"]
+      },
+
+      {
+        "date": "2021-09-20",
+        "ticker": "BTC",
+        "direction": "Buy",
+        "amount": 150,
+        "price_in_usd": 45750,
+        "high_price_confidence": false,
+        "sources": ["https://twitter.com/nayibbukele/status/1439815012642611203",
+                    "https://web.archive.org/web/20211202044502/https://twitter.com/nayibbukele/status/1439815012642611203",
+                    "https://ftx.com/api/markets/BTC/USD/candles?resolution=300&start_time=1632115800&end_time=1632115801"]
+      },
+
+      {
+        "date": "2021-09-07",
+        "ticker": "BTC",
+        "direction": "Buy",
+        "amount": 150,
+        "price_in_usd": 46720,
+        "high_price_confidence": false,
+        "sources": ["https://twitter.com/nayibbukele/status/1435260422110732300",
+                    "https://web.archive.org/web/20211202044502/https://twitter.com/nayibbukele/status/1435260422110732300",
+                    "https://ftx.com/api/markets/BTC/USD/candles?resolution=300&start_time=1631028600&end_time=1631028600"]
+      },
+
+      {
+        "date": "2021-09-07",
+        "ticker": "BTC",
+        "direction": "Buy",
+        "amount": 200,
+        "price_in_usd": 52645,
+        "high_price_confidence": false,
+        "sources": ["https://twitter.com/nayibbukele/status/1435023474494410753",
+                    "https://web.archive.org/web/20211202044502/https://twitter.com/nayibbukele/status/1435023474494410753",
+                    "https://ftx.com/api/markets/BTC/USD/candles?resolution=300&start_time=1630971000&end_time=1630971001"]
+      },
+
+
+      {
+        "date": "2021-09-06",
+        "ticker": "BTC",
+        "direction": "Buy",
+        "amount": 200,
+        "price_in_usd": 51680,
+        "high_price_confidence": false,
+        "sources": ["https://twitter.com/nayibbukele/status/1434968475928248331",
+                    "https://web.archive.org/web/20211203215040/https://twitter.com/nayibbukele/status/1434968475928248331",
+                    "https://ftx.com/api/markets/BTC/USD/candles?resolution=300&start_time=1630953000&end_time=1630953001"]
       }
   ]
   };
@@ -89,7 +151,6 @@ const buildTable = async (BTCUSD) => {
       <thead>
           <tr>
               <th>Date</th>
-              <th>Profit %</th>
               <th>Direction</th>
               <th>Amount</th>
               <th>Price(USD) per</th>
@@ -113,7 +174,6 @@ const buildTable = async (BTCUSD) => {
 
       table += `<tr>
           <td>${tx.date}</td>
-          <td>${relativeProfit.toFixed(2)}%</td>
           <td>${tx.direction}</td>
           <td>${tx.amount} ${tx.ticker}</td>
           <td>$${numberFormatter(tx.price_in_usd)}${tx.high_price_confidence ? '' : '*'}</td>
@@ -122,7 +182,7 @@ const buildTable = async (BTCUSD) => {
   });
 
   table += `</tbody></table><br>
-            <p><i>* No primary source providing a price is available</i></p>
+            <p class=\"tiny-message\"><i>* No primary source providing a price is available. This is a guess based on a time shortly before the President's tweet.</i></p>
             <p> <b>Total BTC owned</b>: ${BTCOwned} BTC<br>
                 <b>Average price</b>: $${numberFormatter((USDSpent/BTCOwned))}</p>
 
