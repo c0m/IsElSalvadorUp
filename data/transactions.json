@@ -1,0 +1,27 @@
+{
+    "transactions": [
+      {
+        "date": "2021-12-04",
+        "ticker": "BTC",
+        "direction": "Sell",
+        "amount": 1505,
+        "price_in_usd": 48670,
+        "price_confidence": "High",
+        "sources": ["https://twitter.com/nayibbukele/status/1467000621354135555",
+                    "https://web.archive.org/web/20211204051954/https://twitter.com/nayibbukele/status/1467000621354135555"]
+      },
+
+      {
+        "date": "2021-12-05",
+        "ticker": "BTC",
+        "direction": "Sell",
+        "amount": 150,
+        "price_in_usd": 48660,
+        "price_confidence": "High",
+        "sources": ["https://twitter.com/nayibbukele/status/1467000621354135555",
+                    "https://web.archive.org/web/20211204051954/https://twitter.com/nayibbukele/status/1467000621354135555"]
+  
+  
+      }
+  ]
+}
