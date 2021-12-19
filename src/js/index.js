@@ -122,25 +122,25 @@ const updatePriceDisplay = (BTCUSD) => {
   document.getElementById('price-display').innerHTML = `
     BTC/USD: ${BTCUSD}`;
   document.getElementById('position-evaluation').innerHTML = evaluatePosition(profitInPercent) + 
-                                                              Math.abs(profitInPercent).toFixed(2) + 
-                                                              `%, or $${numberFormatter(profitInUSD)}</div>` + 
-                                                              shillMessage;
+                                                              `$${numberFormatter(Math.abs(profitInUSD))} or 
+                                                              ${Math.abs(profitInPercent).toFixed(2)}%</div><br>
+                                                              ${shillMessage}`;                                                             shillMessage;
 };
 
 const evaluatePosition = (percentageGained) => {
   switch(true){
-      case percentageGained >= 5:
+      case percentageGained >= 10:
         return veryGoodMessage;
-      case percentageGained > 0 && percentageGained < 5:
+      case percentageGained > 0 && percentageGained < 10:
         return goodMessage;
       case percentageGained == 0:
         return neutralMessage;
-      case percentageGained < 0 && percentageGained > -5:
+      case percentageGained < 0 && percentageGained > -10:
         return badMessage;
-      case percentageGained <= -5:
+      case percentageGained <= -10:
         return veryBadMessage;
       default:
-        return 'it\'s loading dude calm down jesus please just calm down look it\'ll be better in a few seconds trust me please no stop get away from me';
+        return 'it\'s loading dude calm down';
   }
 
 }
