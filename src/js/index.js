@@ -12,6 +12,17 @@ const getLocalData = async () => {
   return {
     "transactions": [
       {
+        "date": "2022-01-21",
+        "ticker": "BTC",
+        "direction": "Buy",
+        "amount": 410,
+        "price_in_usd": 36585,
+        "high_price_confidence": true,
+        "sources": ["https://twitter.com/nayibbukele/status/1484651539587289091",
+                    "https://web.archive.org/web/20220121221829/https://twitter.com/nayibbukele/status/1484651539587289091"]
+      },
+
+      {
         "date": "2021-12-04",
         "ticker": "BTC",
         "direction": "Buy",
