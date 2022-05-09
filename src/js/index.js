@@ -10,7 +10,17 @@ const shillMessage = `<br><div class=\"tiny-message\"><i>Would you also like to 
 
 const getLocalData = async () => {
   return {
-    "transactions": [
+    "transactions": [      
+      {
+        "date": "2022-05-09",
+        "ticker": "BTC",
+        "direction": "Buy",
+        "amount": 500,
+        "price_in_usd": 30744,
+        "high_price_confidence": true,
+        "sources": ["https://twitter.com/nayibbukele/status/1523742670044413954 ",
+                    "https://web.archive.org/web/20220121221829/https://twitter.com/nayibbukele/status/1523742670044413954"] //not updated yet but I think archive.org just autoredirects once it gets archived
+      },
       {
         "date": "2022-01-21",
         "ticker": "BTC",
