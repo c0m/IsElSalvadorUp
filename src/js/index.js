@@ -12,7 +12,7 @@ const getLocalData = async () => {
   return {
     "transactions": [      
       {
-        "date": "2022-05-09",
+        "date": "2022-07-01",
         "ticker": "BTC",
         "direction": "Buy",
         "amount": 80,
