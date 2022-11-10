@@ -5,7 +5,7 @@ const goodMessage = `<div class=\"good-evaluation\"><h1>Yes</h1><br><p>They're u
 const neutralMessage = `<div><h1>:|</h1><br><p>They're neither up nor down, but watch this percentage and maybe it'll change: `;
 const badMessage = `<div class=\"bad-evaluation\"><h1>No</h1><br><p>They're down by a modest `;
 const veryBadMessage = `<div class=\"bad-evaluation\"><h1>NO!</h1><br><p>Oopsie woopsie! They're very down! How much? `;
-const shillMessage = `<br><div class=\"tiny-message\"><i>Would you also like to irresponsibly gamble away your country's finances? Consider signing up for an account on <a href="https://ftx.com/profile#a=iselsalvadorup">FTX</a> or <a href="https://accounts.binance.com/en/register?ref=DVISPZG8">Binance</a>.</i></div><br>`;
+const shillMessage = `<br><div class=\"tiny-message\"><i>Would you also like to irresponsibly gamble away your country's finances? Consider signing up for an account on <a href="https://accounts.binance.com/en/register?ref=DVISPZG8">Binance</a>.</i></div><br>`;
 
 
 const getLocalData = async () => {
