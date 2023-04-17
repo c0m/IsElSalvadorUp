@@ -1,83 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-:root {
-  --neutral: #E1E1E1;
-  --green: #6DCB6C;
-  --deep-green: #1F8340;
-  --red: #D95F5F;
-  --deep-red: #8B1E1E;
-  --deep-deep-red: #3E0C0C;
-  --text-color: #333333;
-  --font-family: 'Poppins', sans-serif;
+.position-evaluation{
+  text-align: center;;
 }
 
-body {
-  font-family: var(--font-family);
-  color: var(--text-color);
-  background-color: var(--neutral);
-}
-
-.position-evaluation {
-  text-align: center;
-}
-
-h1 {
+h1{
   font-size: 10em;
-  font-weight: 600;
 }
 
-.good-evaluation {
-  color: var(--green);
+.good-evaluation{
+  color: green;
 }
 
-.bad-evaluation {
-  color: var(--red);
+.bad-evaluation{
+  color: red;
 }
 
 .tiny-message {
   font-size: x-small;
-}
-
-/* Table styles */
-.table {
-  width: 100%;
-  margin-bottom: 1rem;
-  color: var(--text-color);
-}
-
-.table th,
-.table td {
-  padding: 0.75rem;
-  vertical-align: top;
-  border-top: 1px solid #dee2e6;
-}
-
-.table thead th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
-}
-
-.table tbody + tbody {
-  border-top: 2px solid #dee2e6;
-}
-
-/* Theme styles */
-.green-theme {
-  background-color: var(--green);
-}
-
-.deep-green-theme {
-  background-color: var(--deep-green);
-}
-
-.red-theme {
-  background-color: var(--red);
-}
-
-.deep-red-theme {
-  background-color: var(--deep-red);
-}
-
-.deep-deep-red-theme {
-  background-color: var(--deep-deep-red);
 }
