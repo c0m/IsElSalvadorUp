@@ -1,27 +1,118 @@
 {
-    "transactions": [
-      {
-        "date": "2021-12-04",
-        "ticker": "BTC",
-        "direction": "Sell",
-        "amount": 1505,
-        "price_in_usd": 48670,
-        "price_confidence": "High",
-        "sources": ["https://twitter.com/nayibbukele/status/1467000621354135555",
-                    "https://web.archive.org/web/20211204051954/https://twitter.com/nayibbukele/status/1467000621354135555"]
-      },
-
-      {
-        "date": "2021-12-05",
-        "ticker": "BTC",
-        "direction": "Sell",
-        "amount": 150,
-        "price_in_usd": 48660,
-        "price_confidence": "High",
-        "sources": ["https://twitter.com/nayibbukele/status/1467000621354135555",
-                    "https://web.archive.org/web/20211204051954/https://twitter.com/nayibbukele/status/1467000621354135555"]
-  
-  
-      }
+    "transactions": [      
+          {
+            "date": "2022-07-01",
+            "ticker": "BTC",
+            "direction": "Buy",
+            "amount": 80,
+            "price_in_usd": 19000,
+            "high_price_confidence": true,
+            "sources": ["https://twitter.com/nayibbukele/status/1542672286490271744 ",
+                        "https://web.archive.org/web/20220121221829/https://twitter.com/nayibbukele/status/1542672286490271744"]
+          },
+          {
+            "date": "2022-05-09",
+            "ticker": "BTC",
+            "direction": "Buy",
+            "amount": 500,
+            "price_in_usd": 30744,
+            "high_price_confidence": true,
+            "sources": ["https://twitter.com/nayibbukele/status/1523742670044413954 ",
+                        "https://web.archive.org/web/20220121221829/https://twitter.com/nayibbukele/status/1523742670044413954"]
+          },
+          {
+            "date": "2022-01-21",
+            "ticker": "BTC",
+            "direction": "Buy",
+            "amount": 410,
+            "price_in_usd": 36585,
+            "high_price_confidence": true,
+            "sources": ["https://twitter.com/nayibbukele/status/1484651539587289091",
+                        "https://web.archive.org/web/20220121221829/https://twitter.com/nayibbukele/status/1484651539587289091"]
+          },
+        
+          {
+            "date": "2021-12-04",
+            "ticker": "BTC",
+            "direction": "Buy",
+            "amount": 150,
+            "price_in_usd": 48670,
+            "high_price_confidence": true,
+            "sources": ["https://twitter.com/nayibbukele/status/1467000621354135555",
+                        "https://web.archive.org/web/20211204051954/https://twitter.com/nayibbukele/status/1467000621354135555"]
+          },
+        
+          {
+            "date": "2021-11-26",
+            "ticker": "BTC",
+            "direction": "Buy",
+            "amount": 100,
+            "price_in_usd": 54000,
+            "high_price_confidence": false,
+            "sources": ["https://twitter.com/nayibbukele/status/1464307422793715716",
+                        "https://web.archive.org/web/20211202044502/https://twitter.com/nayibbukele/status/1464307422793715716",
+                        "https://ftx.com/api/markets/BTC/USD/candles?resolution=300&start_time=1637951400&end_time=1637951401"]
+          },
+        
+          {
+            "date": "2021-10-27",
+            "ticker": "BTC",
+            "direction": "Buy",
+            "amount": 420,
+            "price_in_usd": 58700,
+            "high_price_confidence": false,
+            "sources": ["https://twitter.com/nayibbukele/status/1453461587948445697",
+                        "https://web.archive.org/web/20211202044502/https://twitter.com/nayibbukele/status/1453461587948445697",
+                        "https://ftx.com/api/markets/BTC/USD/candles?resolution=300&start_time=1635366600&end_time=1635366601"]
+          },
+        
+          {
+            "date": "2021-09-20",
+            "ticker": "BTC",
+            "direction": "Buy",
+            "amount": 150,
+            "price_in_usd": 45750,
+            "high_price_confidence": false,
+            "sources": ["https://twitter.com/nayibbukele/status/1439815012642611203",
+                        "https://web.archive.org/web/20211202044502/https://twitter.com/nayibbukele/status/1439815012642611203",
+                        "https://ftx.com/api/markets/BTC/USD/candles?resolution=300&start_time=1632115800&end_time=1632115801"]
+          },
+        
+          {
+            "date": "2021-09-07",
+            "ticker": "BTC",
+            "direction": "Buy",
+            "amount": 150,
+            "price_in_usd": 46720,
+            "high_price_confidence": false,
+            "sources": ["https://twitter.com/nayibbukele/status/1435260422110732300",
+                        "https://web.archive.org/web/20211202044502/https://twitter.com/nayibbukele/status/1435260422110732300",
+                        "https://ftx.com/api/markets/BTC/USD/candles?resolution=300&start_time=1631028600&end_time=1631028600"]
+          },
+        
+          {
+            "date": "2021-09-07",
+            "ticker": "BTC",
+            "direction": "Buy",
+            "amount": 200,
+            "price_in_usd": 52645,
+            "high_price_confidence": false,
+            "sources": ["https://twitter.com/nayibbukele/status/1435023474494410753",
+                        "https://web.archive.org/web/20211202044502/https://twitter.com/nayibbukele/status/1435023474494410753",
+                        "https://ftx.com/api/markets/BTC/USD/candles?resolution=300&start_time=1630971000&end_time=1630971001"]
+          },
+        
+        
+          {
+            "date": "2021-09-06",
+            "ticker": "BTC",
+            "direction": "Buy",
+            "amount": 200,
+            "price_in_usd": 51680,
+            "high_price_confidence": false,
+            "sources": ["https://twitter.com/nayibbukele/status/1434968475928248331",
+                        "https://web.archive.org/web/20211203215040/https://twitter.com/nayibbukele/status/1434968475928248331",
+                        "https://ftx.com/api/markets/BTC/USD/candles?resolution=300&start_time=1630953000&end_time=1630953001"]
+          }
   ]
 }
